@@ -121,7 +121,12 @@ return packer.startup(function(use)
 	})
 
 	use("lukas-reineke/indent-blankline.nvim")
-
+	use("folke/tokyonight.nvim")
+	use("EdenEast/nightfox.nvim")
+	use({
+		"lewis6991/gitsigns.nvim",
+		-- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
+	})
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

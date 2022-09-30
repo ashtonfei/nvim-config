@@ -1,6 +1,5 @@
 vim.o.background = "dark" -- or "light" for light mode
--- setup must be called before loading the colorscheme
--- Default options:
+-- gruvbox
 require("gruvbox").setup({
 	undercurl = true,
 	underline = true,
@@ -17,4 +16,6 @@ require("gruvbox").setup({
 	dim_inactive = false,
 	transparent_mode = true,
 })
-vim.cmd("colorscheme gruvbox")
+
+-- tokyonight, gruvbox, nightfox
+vim.cmd("colorscheme tokyonight")
