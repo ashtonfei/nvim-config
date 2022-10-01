@@ -39,9 +39,10 @@ km("n", "<S-h>", ":bprevious<CR>", opts)
 km("v", "<Tab>", ">gv", opts)
 km("v", "<S-Tab>", "<gv", opts)
 
--- Move Lines Up and Down
--- km("v", "<C-j>", ":m .+1<CR>==", opts)
--- km("v", "<C-k>", ":m .-2<CR>==", opts)
+-- Move text up and down
+km("v", "<J>", ":m .+1<CR>==", opts)
+km("v", "<K>", ":m .-2<CR>==", opts)
+km("v", "p", '"_dP', opts)
 
 -- Move text up and down
 km("x", "J", ":move '>+1<CR>gv-gv", opts)
