@@ -57,7 +57,7 @@ km("n", "<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<CR>", opt
 km("n", "<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<CR>", opts)
 
 -- Nvim Tree
-km("n", "<leader>b", ":NvimTreeToggle<CR>", opts)
+km("n", "<C-b>", ":NvimTreeToggle<CR>", opts)
 
 -- ToggleTerm
 km("n", "<C-t>", "<CMD>exe v:count1 . 'ToggleTerm'<CR>", opts)
